@@ -6,7 +6,7 @@ A modern, enterprise-grade B2B textile marketplace connecting manufacturers, who
 A modern, fully responsive B2B textile marketplace platform connecting manufacturers, wholesalers, and retailers.
 
 ## Live Demo
-https://MitSoni27.github.io/TextilePro-B2B-Platform
+https://textileprobymitsoni.netlify.app/
 
 ## Features
 - 🌓 Light & Dark Theme Toggle
