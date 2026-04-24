@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>TextilePro | B2B Textile Business Platform</title>
+    <!-- External CSS & JS Files -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+</head>
+<body>
+
+<!-- Mobile Navigation Overlay & Menu - ADD THIS RIGHT AFTER BODY TAG -->
+<div class="mobile-overlay"></div>
+<div class="mobile-nav">
+    <ul>
+        <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+        <li><a href="#products"><i class="fas fa-box-open"></i> Wholesale</a></li>
+        <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="mobile-auth">
+        <a href="#" id="mobileLoginBtn" class="btn-outline btn" style="width:100%; margin-bottom:12px; justify-content:center;">
+            <i class="fas fa-sign-in-alt"></i> Login
+        </a>
+        <a href="#" id="mobileRegisterBtn" class="btn" style="width:100%; justify-content:center;">
+            <i class="fas fa-building"></i> Register
+        </a>
+    </div>
+</div>
+
+<!-- Header with Navigation -->
+<header>
+    <div class="container header-container">
+        <a href="#home" class="logo">
+            <div class="logo-icon">
+                <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="logo-text">
+                <span>TextilePro</span>
+                <span>B2B BUSINESS PLATFORM</span>
+            </div>
+        </a>
+        
+        <div class="nav-main">
+            <!-- Desktop Navigation -->
+            <div class="desktop-nav">
+                <ul>
+                    <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#categories"><i class="fas fa-th-large"></i> Categories</a></li>
+                    <li><a href="#products"><i class="fas fa-box-open"></i> Wholesale</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <!-- Desktop Auth Buttons -->
+            <div class="auth-buttons desktop-auth">
+                <a href="#" id="navLoginBtn" class="btn-outline btn">Login</a>
+                <a href="#" id="navRegisterBtn" class="btn">Register</a>
+            </div>
+            
+            <!-- Theme Toggle & Cart -->
+            <div class="nav-icons">
+                <div class="theme-toggle-wrapper">
+                    <button class="theme-toggle" id="themeToggle">
+                        <div class="toggle-slider">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                    </button>
+                </div>
+                <a href="#" id="cartBtn" class="cart-icon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero Slider -->
+<section class="hero-slider" id="home">
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/slide1.jpg" alt="Textile Manufacturing">
+                <div class="slide-content">
+                    <h1>Premium Textile Solutions for Businesses</h1>
+                    <p>Connect directly with verified manufacturers. Source premium fabrics, sarees, and textiles at wholesale prices with quality assurance and logistics support.</p>
+                    <div class="slide-buttons">
+                        <a href="#categories" class="btn"><i class="fas fa-search"></i> Explore Catalog</a>
+                        <a href="#" id="heroRegisterBtn" class="btn btn-accent"><i class="fas fa-building"></i> Register Business</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="images/slide2.jpg" alt="Textile Factory">
+                <div class="slide-content">
+                    <h1>Direct Manufacturer Access</h1>
+                    <p>Eliminate middlemen and source directly from 5000+ verified textile manufacturers across India. Competitive pricing with bulk order discounts.</p>
+                    <a href="#products" class="btn"><i class="fas fa-boxes"></i> View Products</a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="stats">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>5,000+</h3>
+                <p>Verified Manufacturers</p>
+            </div>
+            <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Textile Products</p>
+            </div>
+            <div class="stat-item">
+                <h3>15,000+</h3>
+                <p>Business Clients</p>
+            </div>
+            <div class="stat-item">
+                <h3>₹500Cr+</h3>
+                <p>Annual Transaction</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Categories Section -->
+<section class="categories" id="categories">
+    <div class="container">
+        <div class="section-header">
+            <h2>Product Categories</h2>
+            <a href="#products" class="btn btn-outline"><i class="fas fa-filter"></i> View All Categories</a>
+        </div>
+        <div class="categories-grid">
+            <div class="category-card">
+                <img src="images/cotton.jpeg" alt="Cotton Fabrics" class="category-img">
+                <div class="category-overlay">
+                    <h3>Cotton Fabrics</h3>
+                    <p>Premium cotton textiles for apparel and home furnishings</p>
+                    <a href="#" class="btn btn-outline" style="color: white; border-color: white;">Explore</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="images/silk.jpeg" alt="Silk & Sarees" class="category-img">
+                <div class="category-overlay">
+                    <h3>Silk & Sarees</h3>
+                    <p>Traditional and contemporary silk collections</p>
+                    <a href="#" class="btn btn-outline" style="color: white; border-color: white;">Explore</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="images/wool.jpeg" alt="Woolen Textiles" class="category-img">
+                <div class="category-overlay">
+                    <h3>Woolen Textiles</h3>
+                    <p>Winter fabrics and wool blends for seasonal collections</p>
+                    <a href="#" class="btn btn-outline" style="color: white; border-color: white;">Explore</a>
+                </div>
+            </div>
+            
+            <div class="category-card">
+                <img src="images/synthetic.jpeg" alt="Synthetic Fabrics" class="category-img">
+                <div class="category-overlay">
+                    <h3>Synthetic Fabrics</h3>
+                    <p>Polyester, nylon, and blended fabrics for diverse applications</p>
+                    <a href="#" class="btn btn-outline" style="color: white; border-color: white;">Explore</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Products Section -->
+<section class="products" id="products">
+    <div class="container">
+        <div class="section-header">
+            <h2>Wholesale Products</h2>
+            <a href="#categories" class="btn btn-outline"><i class="fas fa-filter"></i> View All Categories</a>
+        </div>
+        
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-badge">Bulk Discount</div>
+                <img src="images/product1.jpeg" alt="Premium Cotton" class="product-img">
+                <div class="product-content">
+                    <h3>Premium Cotton Fabric</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                        <span>(4.5)</span>
+                    </div>
+                    <div class="product-price">
+                        ₹85/meter
+                        <span class="old-price">₹95/meter</span>
+                    </div>
+                    <p>High quality cotton fabric, perfect for garment manufacturing and bulk orders.</p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-box"></i> Min. Order: 100m</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Surat, Gujarat</span>
+                    </div>
+                    <a href="#" class="btn quote-btn" style="width: 100%; margin-top: 20px;"><i class="fas fa-file-invoice"></i> Request Quote</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-badge">Best Seller</div>
+                <img src="images/product2.jpeg" alt="Silk Saree" class="product-img">
+                <div class="product-content">
+                    <h3>Pure Banarasi Silk Saree</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <span>(4.0)</span>
+                    </div>
+                    <div class="product-price">
+                        ₹1,250/piece
+                        <span class="old-price">₹1,500/piece</span>
+                    </div>
+                    <p>Traditional silk saree with zari work, bulk order discounts available for retailers.</p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-box"></i> Min. Order: 50pcs</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Varanasi, UP</span>
+                    </div>
+                    <a href="#" class="btn quote-btn" style="width: 100%; margin-top: 20px;"><i class="fas fa-file-invoice"></i> Request Quote</a>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-badge">New Arrival</div>
+                <img src="images/product3.jpeg" alt="Wool Fabric" class="product-img">
+                <div class="product-content">
+                    <h3>Wool Blend Winter Fabric</h3>
+                    <div class="product-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <span>(5.0)</span>
+                    </div>
+                    <div class="product-price">
+                        ₹320/meter
+                        <span class="old-price">₹350/meter</span>
+                    </div>
+                    <p>Warm wool blend fabric for winter clothing collections and seasonal inventory.</p>
+                    <div class="product-meta">
+                        <span><i class="fas fa-box"></i> Min. Order: 200m</span>
+                        <span><i class="fas fa-map-marker-alt"></i> Ludhiana, Punjab</span>
+                    </div>
+                    <a href="#" class="btn quote-btn" style="width: 100%; margin-top: 20px;"><i class="fas fa-file-invoice"></i> Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Us Section -->
+<section class="about-us" id="about">
+    <div class="container">
+        <h2 class="text-center">About TextilePro</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Founded in 2010, TextilePro is India's premier B2B textile marketplace connecting businesses with verified manufacturers and suppliers. We bridge the gap between textile producers and buyers across the globe.</p>
+                <p>With over 13 years of industry experience, we've built a trusted platform that simplifies textile sourcing, ensures quality, and provides complete supply chain solutions for businesses of all sizes.</p>
+                <div class="about-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Quality Assurance</h4>
+                            <p>Verified suppliers with quality inspection services</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Trade Protection</h4>
+                            <p>Secure transactions with payment protection</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Logistics Network</h4>
+                            <p>End-to-end logistics with real-time tracking</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>24/7 Support</h4>
+                            <p>Dedicated business support team</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="images/about.jpeg" alt="TextilePro Office">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact-section" id="contact">
+    <div class="container">
+        <h2 class="text-center">Contact & Location</h2>
+        
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3><i class="fas fa-map-marker-alt"></i> Our Headquarters</h3>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Address</h4>
+                            <p>Textile Tower, 5th Floor<br>
+                            Ring Road, Textile Market<br>
+                            Ahmedabad, Gujarat - 382418</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone Numbers</h4>
+                            <p>Sales: +91 98765 43210<br>
+                            Support: +91 98765 43211<br>
+                            Fax: +91 261 245 6789</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email Addresses</h4>
+                            <p>Sales: sales@textilepro.com<br>
+                            Support: support@textilepro.com<br>
+                            Corporate: corporate@textilepro.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Business Hours</h4>
+                            <p>Monday - Friday: 9:00 AM - 7:00 PM<br>
+                            Saturday: 9:00 AM - 4:00 PM<br>
+                            Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h4>Surat Textile Market</h4>
+                    <p>Google Maps integration would show exact location here</p>
+                    <a href="https://www.google.com/maps/place/Surat,+Gujarat" target="_blank" class="btn" style="margin-top: 20px;">
+                        <i class="fas fa-external-link-alt"></i> Open in Google Maps
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter">
+    <div class="container">
+        <div class="newsletter-content">
+            <h2>Stay Updated with Market Trends</h2>
+            <p>Subscribe to receive wholesale price alerts, new supplier listings, and industry insights directly to your inbox.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Enter your business email address" required>
+                <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>TextilePro</h3>
+                <p>India's trusted B2B textile marketplace connecting businesses with verified manufacturers since 2010.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#home"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#categories"><i class="fas fa-chevron-right"></i> Categories</a></li>
+                    <li><a href="#products"><i class="fas fa-chevron-right"></i> Products</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Us</a></li>
+                    <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Business Services</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Become a Supplier</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Trade Assurance</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Logistics Support</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> Quality Inspection</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> GST Billing</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Contact Information</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Textile Tower, Surat, Gujarat</a></li>
+                    <li><a href="tel:+919876543210"><i class="fas fa-phone"></i> +91 98765 43210</a></li>
+                    <li><a href="mailto:business@textilepro.com"><i class="fas fa-envelope"></i> business@textilepro.com</a></li>
+                    <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM - 7PM</a></li>
+                    <li><a href="#"><i class="fas fa-file-invoice"></i> GST: 27AABCU9603R1ZX</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 TextilePro B2B Platform. All rights reserved. | <a href="#" style="color: var(--accent);">Privacy Policy</a> | <a href="#" style="color: var(--accent);">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- AUTHENTICATION MODAL -->
+<div class="auth-modal" id="authModal">
+    <div class="auth-container">
+        <div class="auth-left">
+            <div class="auth-left-content">
+                <h2>Why Join TextilePro?</h2>
+                <p>Register your business on India's most trusted B2B textile platform and unlock exclusive wholesale benefits designed for your growth.</p>
+                <ul class="benefits-list">
+                    <li><div class="benefit-icon"><i class="fas fa-search-dollar"></i></div><div class="benefit-content"><h4>Direct Manufacturer Access</h4><p>Connect directly with 5000+ verified manufacturers and negotiate better wholesale prices without middlemen.</p></div></li>
+                    <li><div class="benefit-icon"><i class="fas fa-shield-alt"></i></div><div class="benefit-content"><h4>Trade Assurance</h4><p>100% payment protection with quality inspection and on-time delivery guarantee for worry-free transactions.</p></div></li>
+                    <li><div class="benefit-icon"><i class="fas fa-truck"></i></div><div class="benefit-content"><h4>Integrated Logistics</h4><p>End-to-end logistics support with real-time tracking and competitive shipping rates across India.</p></div></li>
+                    <li><div class="benefit-icon"><i class="fas fa-chart-line"></i></div><div class="benefit-content"><h4>Market Intelligence</h4><p>Access real-time pricing trends, demand forecasts, and supplier performance analytics.</p></div></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="auth-right">
+            <div class="auth-tabs-container">
+                <div class="auth-tabs">
+                    <div class="auth-tab active" data-tab="login">Business Login</div>
+                    <div class="auth-tab" data-tab="register">Register Business</div>
+                </div>
+            </div>
+            
+            <form class="auth-form active" id="loginForm">
+                <div class="form-group"><label><i class="fas fa-envelope"></i> Business Email / Mobile</label><input type="text" id="loginEmail" class="form-control" placeholder="Enter registered email or mobile" required></div>
+                <div class="form-group"><label><i class="fas fa-lock"></i> Password</label><input type="password" id="loginPassword" class="form-control" placeholder="Enter your password" required></div>
+                <div class="form-group" style="display: flex; justify-content: space-between; align-items: center;"><div><input type="checkbox" id="remember"> <label for="remember" style="display: inline; margin-left: 5px;">Remember this device</label></div><a href="#" id="forgotPassword" style="color: var(--primary); text-decoration: none;">Forgot password?</a></div>
+                <div class="form-group"><button type="submit" class="btn" style="width: 100%;"><i class="fas fa-sign-in-alt"></i> Login to Business Dashboard</button></div>
+                <div class="form-footer"><p>Don't have a business account? <a href="#" id="switchToRegister">Register your business</a></p></div>
+            </form>
+            
+            <form class="auth-form" id="registerForm">
+                <div class="profile-image-upload"><div class="profile-preview" id="profilePreview"><i class="fas fa-user-tie"></i></div><div class="upload-controls"><label class="upload-btn"><i class="fas fa-upload"></i> Upload Profile Photo<input type="file" id="profileImage" accept="image/*" style="display: none;"></label><div class="file-name" id="fileName">No file chosen</div><div style="font-size: 0.75rem; color: var(--gray); margin-top: 5px;">Max size: 2MB, JPG/PNG</div></div></div>
+                <div class="form-row"><div class="form-group"><label><i class="fas fa-building"></i> Business Name *</label><input type="text" id="businessName" class="form-control" placeholder="Legal business name as per GST" required></div><div class="form-group"><label><i class="fas fa-user-tie"></i> Owner/Contact Person *</label><input type="text" id="ownerName" class="form-control" placeholder="Full name of business owner" required></div></div>
+                <div class="form-row"><div class="form-group"><label><i class="fas fa-envelope"></i> Business Email *</label><input type="email" id="businessEmail" class="form-control" placeholder="Official email address" required></div><div class="form-group"><label><i class="fas fa-phone"></i> Mobile Number *</label><input type="tel" id="businessMobile" class="form-control" placeholder="10-digit mobile number" required></div></div>
+                <div class="form-group"><label><i class="fas fa-briefcase"></i> Business Type *</label><select id="businessType" class="form-control" required><option value="">Select your business type</option><option value="wholesaler">Wholesaler/Distributor</option><option value="retailer">Retail Store/Showroom</option><option value="manufacturer">Manufacturer/Producer</option><option value="exporter">Export Business</option><option value="importer">Import Business</option></select></div>
+                <div class="form-row"><div class="form-group"><label><i class="fas fa-file-invoice"></i> GST Number *</label><input type="text" id="gstNumber" class="form-control" placeholder="15-digit GST number" required></div><div class="form-group"><label><i class="fas fa-map-marker-alt"></i> State *</label><select id="state" class="form-control" required><option value="">Select registered state</option><option value="gujarat">Gujarat</option><option value="maharashtra">Maharashtra</option><option value="tamilnadu">Tamil Nadu</option><option value="karnataka">Karnataka</option><option value="up">Uttar Pradesh</option></select></div></div>
+                <div class="form-group"><label><i class="fas fa-map"></i> Business Address *</label><textarea id="businessAddress" class="form-control" placeholder="Complete business address with pincode" rows="3" required></textarea></div>
+                <div class="form-row"><div class="form-group"><label><i class="fas fa-key"></i> Create Password *</label><input type="password" id="password" class="form-control" placeholder="Minimum 8 characters" required></div><div class="form-group"><label><i class="fas fa-key"></i> Confirm Password *</label><input type="password" id="confirmPassword" class="form-control" placeholder="Confirm your password" required></div></div>
+                <div class="recaptcha-container" id="recaptchaBox"><div class="recaptcha-checkbox" id="recaptchaCheckbox"></div><div class="recaptcha-text">I'm not a robot</div><div class="recaptcha-logo"><i class="fas fa-robot"></i><span>reCAPTCHA</span></div></div>
+                <div class="form-group"><div style="display: flex; align-items: flex-start; gap: 10px;"><input type="checkbox" id="terms" required style="margin-top: 3px;"> <label for="terms" style="font-size: 0.85rem;">I agree to the <a href="#" style="color: var(--primary);">Terms of Service</a> and <a href="#" style="color: var(--primary);">Privacy Policy</a></label></div></div>
+                <div class="form-group"><button type="submit" class="btn btn-accent" style="width: 100%;"><i class="fas fa-building"></i> Register Business Account</button></div>
+                <div class="form-footer"><p>Already have a business account? <a href="#" id="switchToLogin">Business Login</a></p></div>
+            </form>
+        </div>
+    </div>
+    <button class="close-auth" id="closeAuth">&times;</button>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
